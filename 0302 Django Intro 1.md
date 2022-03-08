@@ -1,8 +1,8 @@
 ## Django Intro
 
+​                   
 
-
-
+​            
 
 - **Static web page (정적 웹 페이지)**
 
@@ -18,9 +18,9 @@
 
   flat page 라고도 함
 
-​                
+​                          
 
-
+​            
 
 - **Dynamic web page (동적 웹 페이지)**
 
@@ -34,9 +34,9 @@
 
   파일을 처리하고 데이터베이스와의 상호작용이 이루어짐
 
-​           
+​                    
 
-​      
+​                 
 
 - **Framework (Application framwork)**
 
@@ -50,9 +50,9 @@
 
   같이 사용할 수 있도록 도움
 
-​               
+​                     
 
-
+​          
 
 - **web framework**
 
@@ -64,15 +64,15 @@
 
   만들어지는 Application framework의 일종
 
-​                
+​                        
 
-
+​         
 
 ---
 
-​            
+​                    
 
-​    
+​               
 
 - **Framework Architecture**
 
@@ -86,9 +86,9 @@
 
   서로 영향 없이 쉽게 고칠 수 있는 애플리케이션을 만들 수 있음
 
-  ​              
+  ​                      
 
-  
+  ​              
 
   - Django : **MTV 패턴**이라고 함 (model - template - view)
 
@@ -111,15 +111,15 @@
 
     ![제목 없음](https://user-images.githubusercontent.com/89068148/156375401-3b27f70b-7b7f-4011-a5e8-356ee26c3e4f.png)
 
-
-
-
-
----
+​            
 
 ​             
 
-​            
+---
+
+​                  
+
+​                   
 
 - **가상환경 생성 및 활성화** 
 
@@ -131,9 +131,9 @@
   $ deactivate
   ```
 
-​    
+​                  
 
-
+​         
 
 - **Django 코드 작성 순서 중요**
 
@@ -166,9 +166,9 @@
 
   배포자는 LTS 확정을 통해 장기적이고 안정적인 지원을 보장함
 
+​              
 
-
-
+​          
 
 - **프로젝트 구조**
 
@@ -216,7 +216,7 @@
   > $ python manage.py <command> [options]
   > ```
 
-​                                   
+​                                             
 
 - **Application 구조**
 
@@ -270,9 +270,9 @@
   > template에게 HTTP 응답 서식을 맡김
   > ```
 
+​           
 
-
-
+​          
 
 - **DTL (django template language)**
 
@@ -342,38 +342,8 @@
 
     
 
-  ```
-  ctrl + l : 창 클리어
-  ctrl + c : 가상환경 종료
-  ```
 
 
 
+---
 
-
-- 코드 작성 순서
-  - URL (언더바 권장 안함 - 하이픈 쓰자)
-  - VIEW (언더바 권장)
-  - TEMPLATE
-
-
-
-
-
-- 상속 중요
-
-
-
-
-
-- BASE_DIR
-
-python object oriented filesystem path
-
-운영체제가 다르기 때문에 경로시스템을 공통적으로 맞춰주기 위해서
-
-파이썬의 객체지향적인 파일 시스템
-
-경로를 하드코딩해놓으면 다른 운영체제 (특히 /개념이 다른 체제)
-
-는 경로 불가
