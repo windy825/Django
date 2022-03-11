@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br>
+    <h2>NEW</h2>
+    <br>
+    <hr>
+    <form action="{% url 'movies:create' %}" method="post">
+        {% csrf_token %}
+        <label for="title">제목 : </label>
+        <input type="text" name="title" id="title"><br><br>
+        <label for="audience">관객 : </label>
+        <input type="text" name="audience" id="audience"><br><br>
+        <label for="start">개봉 : </label>
+        <input type="date" id="start" name="trip-start" value="0000-00-00" min="1900-01-01" max="2022-03-11"><br><br>
+        <label for="genere">장르 : </label>
+        <select name="genere" id="genere" multiple>
+            <option value="액션">액션</option>
+            <option value="범죄">범죄</option>
+            <option value="SF">SF</option>
+            <option value="코미디">코미디</option>
+            <option value="로맨틱">로맨틱</option>
+            <option value="스릴러">스릴러</option>
+            <option value="공포">공포</option>
+            <option value="전쟁">전쟁</option>
+            <option value="스포츠">스포츠</option>
+            <option value="판타지">판타지</option>
+            <option value="뮤지컬">뮤지컬</option>
+            <option value="멜로">멜로</option>
+            <option value="음악">음악</option>
+        </select><br><br>
+        <label for="score">평점 : </label>
+        <input type="text" name="score" id="score"><br><br>
+        <label for="poster">URL : </label>
+        <input type="text" name="poster" id="poster"><br><br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <br>
+    <a href="{% url 'movies:index' %}">[뒤로가기]</a>
+{% endblock content %}
