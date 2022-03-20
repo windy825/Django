@@ -1,8 +1,8 @@
 ## Django Intro
 
-​                   
+<br>
 
-​            
+<br>
 
 - **Static web page (정적 웹 페이지)**
 
@@ -18,9 +18,9 @@
 
   flat page 라고도 함
 
-​                          
+<br>
 
-​            
+<br>
 
 - **Dynamic web page (동적 웹 페이지)**
 
@@ -34,9 +34,7 @@
 
   파일을 처리하고 데이터베이스와의 상호작용이 이루어짐
 
-​                    
-
-​                 
+​         <br>           <br>
 
 - **Framework (Application framwork)**
 
@@ -50,9 +48,9 @@
 
   같이 사용할 수 있도록 도움
 
-​                     
+<br>
 
-​          
+<br>
 
 - **web framework**
 
@@ -64,15 +62,15 @@
 
   만들어지는 Application framework의 일종
 
-​                        
+<br>
 
-​         
+<br>
 
 ---
 
-​                    
+<br>
 
-​               
+<br>
 
 - **Framework Architecture**
 
@@ -86,9 +84,9 @@
 
   서로 영향 없이 쉽게 고칠 수 있는 애플리케이션을 만들 수 있음
 
-  ​                      
+    <br>
 
-  ​              
+  <br>
 
   - Django : **MTV 패턴**이라고 함 (model - template - view)
 
@@ -111,15 +109,15 @@
 
     ![제목 없음](https://user-images.githubusercontent.com/89068148/156375401-3b27f70b-7b7f-4011-a5e8-356ee26c3e4f.png)
 
-​            
+​            <br>
 
-​             
+​             <br>
 
 ---
 
-​                  
+​                  <br>
 
-​                   
+​                   <br>
 
 - **가상환경 생성 및 활성화** 
 
@@ -131,9 +129,9 @@
   $ deactivate
   ```
 
-​                  
+​                  <br>
 
-​         
+​         <br>
 
 - **Django 코드 작성 순서 중요**
 
@@ -158,17 +156,19 @@
   $ python manage.py runserver
   ```
 
-  LTS(장기 지원 버전) 버전 확인 필요 
+  - LTS(장기 지원 버전) 버전 확인 필요 
 
-  일반적인 경우보다 장기간에 걸쳐 지원하도록 고안된 소프트웨어의 버전
+    일반적인 경우보다 장기간에 걸쳐 지원하도록 고안된 소프트웨어의 버전
 
-  컴퓨터 소프트웨어의 제품 수명주기 관리 정책
+    컴퓨터 소프트웨어의 제품 수명주기 관리 정책
 
-  배포자는 LTS 확정을 통해 장기적이고 안정적인 지원을 보장함
+    배포자는 LTS 확정을 통해 장기적이고 안정적인 지원을 보장함
+  
+  - 프로젝트 이름에는 python django에서 사용중인 키워드는 피하자, 하이픈**-**도 안된다.
 
-​              
+​              <br>
 
-​          
+​          <br>
 
 - **프로젝트 구조**
 
@@ -216,7 +216,7 @@
   > $ python manage.py <command> [options]
   > ```
 
-​                                             
+​                  <br>       <br>
 
 - **Application 구조**
 
@@ -270,9 +270,9 @@
   > template에게 HTTP 응답 서식을 맡김
   > ```
 
-​           
+​           <br>
 
-​          
+<br>
 
 - **DTL (django template language)**
 
@@ -280,7 +280,7 @@
   프로그래밍적 로직이 아니라 프레젠테이션을 표현하기 위한 것
   파이썬 코드로 실행되는 것이 아님 (비슷한 구조를 사용할 순 있음)
 
-  
+  <br>
 
   - **Variable**  
 
@@ -340,10 +340,11 @@
     {% endcomment %}
     ```
 
-    
+    <br>
 
-
+<br>
 
 
 ---
 
+<br>
