@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>던지기 페이지 입니다.</h1>
+    <form action="/catch" method="get">
+        <label for="message">Throw</label>
+        <input type="text" id="message" name="ms11">
+        <input type="submit">
+    </form>
+{% endblock content %}

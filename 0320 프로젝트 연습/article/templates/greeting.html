@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1>안녕하세요 저는 {{ foods.1|length }} 입니다!!</h1>
+    <p>{{ foods|join:', ' }}</p>
+    <p>{{ info.name }}</p>
+    <a href="/index">뒤로</a>
+
+    <p>메뉴판 안내</p>
+    <ul>
+        {% for food in foods %}
+            <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
