@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br>    
+    <h1 class='text-center' style='font-weight: bolder'>DETAIL PAGE</h1>
+    <hr>
+    <div class='container row' style="margin:100 auto;">
+        <div class="col-md-5" style="margin:0 auto;">
+            <img src="{{ movie.poster_url }}" class="align-items-center" style="width: 30rem;" alt="사진">
+            <hr>
+            <h4 style='font-weight: bold'>제목 : {{ movie.title }}</h4>
+            <h4>관객 : {{ movie.audience }}</h3>
+            <h4>개봉 : {{ movie.release_date }}</h4>
+            <h4>장르 : {{ movie.genre }}</h4>
+            <h4>평점 : {{ movie.score }}</h4>
+            <p>{{ movie.description }}</p>
+            <div class="container d-flex col">
+                <form action="{% url 'movies:delete' movie.pk %}" method='POST'style="margin:1%;" >
+                    {% csrf_token %}
+                    <button>DELETE</button>
+                </form>
+                <a href={% url 'movies:update' movie.pk %} style="margin:1%;">
+                    <button>UPDATE</button>
+                </a>
+                <a href="{% url 'movies:index' %}" style="margin:1%;">
+                    <button>BACK</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock content %}
